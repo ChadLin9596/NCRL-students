@@ -1,0 +1,2 @@
+first_pkg
+-DCATKIN_DEVEL_PREFIX=/home/edxian/NCRL-students/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/edxian/NCRL-students/catkin_ws/install -G Unix Makefiles
