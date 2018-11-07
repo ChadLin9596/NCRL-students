@@ -44,29 +44,23 @@ int main(int argc, char **argv)
   ros::Rate loop_rate(10);
 
   int count = 0;
-  while (ros::ok())
-  {
+  while (ros::ok()){
+    geometry_msgs::Twist vel_msg;
 
+    vel_msg.linear.x= 1;
+    vel_msg.linear.y= 0;
+    vel_msg.linear.z= 0;
 
-	geometry_msgs::Twist vel_msg;
-
-	
-  	vel_msg.linear.x= 1;
-	vel_msg.linear.y= 0;
-	vel_msg.linear.z= 0;
-
-  	vel_msg.angular.x= 0;
-	vel_msg.angular.y= 0;
-	vel_msg.angular.z= 0;
+    vel_msg.angular.x= 0;
+    vel_msg.angular.y= 0;
+    vel_msg.angular.z= 0;
 
     turtlesim_pub.publish(vel_msg);
 
     ros::spinOnce();
 
     loop_rate.sleep();
-
   }
-
   return 0;
 }
 

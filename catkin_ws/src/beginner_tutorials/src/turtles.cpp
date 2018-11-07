@@ -15,43 +15,29 @@ float Kp_theta= 3;
 using namespace std;
 typedef struct
 	{
-	   
 		float x;
 		float y;
 		float theta;
-
 	}turtles;
 
- 
-
- turtles turtles1;
-
-
+turtles turtles1;
 
 	turtlesim::Pose host_mocap, host_mocap2, host_mocap3, host_mocap4;
 	void host_pos(const turtlesim::Pose::ConstPtr& msg)
 	{
-
 		host_mocap = *msg;
-
 	}
 	void host_pos2(const turtlesim::Pose::ConstPtr& msg)
 	{
-
 		host_mocap2 = *msg;
-
 	}
 	void host_pos3(const turtlesim::Pose::ConstPtr& msg)
 	{
-
 		host_mocap3 = *msg;
-
 	}
 	void host_pos4(const turtlesim::Pose::ConstPtr& msg)
 	{
-
 		host_mocap4 = *msg;
-
 	}  //four turtles
 
 void follow(turtles& turtles1,turtlesim::Pose& host_mocap,geometry_msgs::Twist*t, float dis_x, float dis_y)
