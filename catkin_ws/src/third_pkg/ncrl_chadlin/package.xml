@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ncrl_chadlin</name>
+  <version>1.0.0</version>
+  <description>
+    ROS packages for the Networked Control Robotics Lab
+  </description>
+  <license>Apache 2.0</license>
+  <license>BSD</license>
+  <author>Chun-Jong Lin</author>
+  <maintainer email="chadlin.smt07g@nctu.edu.tw">chadlin</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <exec_depend>turtlebot3_example</exec_depend>
+  <exec_depend>turtlebot3_navigation</exec_depend>
+  <exec_depend>turtlebot3_slam</exec_depend>
+  <exec_depend>turtlebot3_teleop</exec_depend>
+  <exec_depend>velodyne_description</exec_depend>
+  <exec_depend>velodyne_gazebo_plugins</exec_depend>
+  <exec_depend>turtlebot3_msgs</exec_depend>
+  <exec_depend>turtlebot3_simulations</exec_depend>
+  <export><metapackage/></export>
+</package>
