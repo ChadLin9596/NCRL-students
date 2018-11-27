@@ -28,6 +28,14 @@ int main(int argc, char **argv)
   // declare publisher & subscriber
   ros::Subscriber pos_sub = n.subscribe<turtlesim::Pose>("turtle1/pose", 10, pos_cb);
   ros::Publisher turtlesim_pub = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 100);
+  ros::Subscriber pos_sub2 = n.subscribe<turtlesim::Pose>("turtle2/pose", 10, pos_cb);
+  ros::Publisher turtlesim_pub2 = n.advertise<geometry_msgs::Twist>("/turtle2/cmd_vel", 100);
+  ros::Subscriber pos_sub3 = n.subscribe<turtlesim::Pose>("turtle3/pose", 10, pos_cb);
+  ros::Publisher turtlesim_pub3 = n.advertise<geometry_msgs::Twist>("/turtle3/cmd_vel", 100);
+  ros::Subscriber pos_sub4 = n.subscribe<turtlesim::Pose>("turtle4/pose", 10, pos_cb);
+  ros::Publisher turtlesim_pub4 = n.advertise<geometry_msgs::Twist>("/turtle4/cmd_vel", 100);
+
+
 
   // setting frequency as 10 Hz
   ros::Rate loop_rate(10);
@@ -36,15 +44,21 @@ int main(int argc, char **argv)
   while (ros::ok()){
     printf("pos x : %f\t y: %f\n",pose.x,pose.y);
 
-    vel_msg.linear.x= 0.5;
+    vel_msg.linear.x= 1;
     vel_msg.linear.y= 0;
     vel_msg.linear.z= 0;
 
     vel_msg.angular.x= 0;
     vel_msg.angular.y= 0;
-    vel_msg.angular.z= 0.2;
+    vel_msg.angular.z= 1;
 
     turtlesim_pub.publish(vel_msg);
+    turtlesim_pub2.publish(vel_msg);
+    turtlesim_pub3.publish(vel_msg);
+    turtlesim_pub4.publish(vel_msg);
+
+
+
 
     ros::spinOnce();
     loop_rate.sleep();
