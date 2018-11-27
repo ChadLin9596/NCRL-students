@@ -206,3 +206,7 @@ install(DIRECTORY launch worlds
 add_executable(offb_turtlebot src/tutorial_1.cpp)
 target_link_libraries(offb_turtlebot ${catkin_LIBRARIES})
 add_dependencies(offb_turtlebot beginner_tutorials_generate_messages_cpp)
+
+
+add_executable(auto_turtlebot src/task_2_3.cpp)
+target_link_libraries(auto_turtlebot ${catkin_LIBRARIES})

@@ -1,8 +1,4 @@
 <<<<<<< HEAD
 your name : steven
 your student ID :0511076
-=======
-your name :shenyunchu
-your student ID :0511020
 
->>>>>>> 4d1e4b88cd4c5beb541b82eb95e2a7ae02da9200
