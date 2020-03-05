@@ -4,6 +4,7 @@
 * [ros tutorial chinese version](http://wiki.ros.org/cn/ROS/Tutorials)
 * [ros tutorial english version](http://wiki.ros.org/ROS/Tutorials)
 * [ncrl student workspace on github ](https://github.com/ChadLin9596/NCRL-students)
+![image](https://github.com/ChadLin9596/NCRL-students/blob/master/logo.png)
 ---
 ## 課程大綱
 :::info
